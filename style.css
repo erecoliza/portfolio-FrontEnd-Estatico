@@ -1,0 +1,62 @@
+body {
+  margin: 0rem;  
+  padding: 0rem;
+  border:0rem;
+}
+
+.container-fluid {  
+  padding: 0rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(149, 175, 233);
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+#logo {
+  width: 5vw;
+  height: 5vw;
+}
+
+.avatar {
+  position: absolute;
+  margin-left: 10vw;
+  margin-top: -5vw;
+  vertical-align: middle;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+}
+
+#Header {
+  background-color: rgba(223, 244, 255, 1);
+  height: 4rem;
+}
+
+#AcercaDe {
+  background-color: rgba(223, 244, 255, 1);
+  height: 7rem;
+  border-style: ridge;
+}
+
+#Experiencia {
+  background-color: rgba(223, 244, 255, 1);
+  height: 7rem;
+}
+
+#Educacion {
+  background-color: rgba(223, 244, 255, 1);
+  height: 7rem;
+}
+
+#Habilidades {
+  background-color: rgba(223, 244, 255, 1);
+  height: 7rem;
+}
+
+#Proyectos {
+  background-color: rgba(223, 244, 255, 1);
+  height: 7rem;
+}
