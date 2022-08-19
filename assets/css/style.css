@@ -8,7 +8,6 @@ body {
   background-color:teal !important;
 }
 
-
 i.fa-brands, i.fa-solid  {
   color: white;
 }
@@ -23,7 +22,7 @@ i.fa-brands:hover, i.fa-solid:hover  {
 
 .container-fluid {  
   padding: 0rem;
-  border-radius: 0.5rem;
+  border-radius: 0.5rem;  
   border: 1px solid rgb(149, 175, 233);
 }
 
