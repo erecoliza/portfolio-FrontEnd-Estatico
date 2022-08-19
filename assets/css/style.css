@@ -4,6 +4,23 @@ body {
   border:0rem;
 }
 
+.navbar.navbar-expand-lg.bg-primary {
+  background-color:teal !important;
+}
+
+
+i.fa-brands, i.fa-solid  {
+  color: white;
+}
+
+i.fa-brands:hover, i.fa-solid:hover  {
+  color: lightblue;
+}
+
+.list-group-item {
+  --bs-list-group-bg: transparent;
+} 
+
 .container-fluid {  
   padding: 0rem;
   border-radius: 0.5rem;
