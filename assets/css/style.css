@@ -86,6 +86,9 @@ i.fa-brands:hover, i.fa-solid:hover  {
 #Habilidades {
   background-color: rgba(223, 244, 255, 1);  
 }
+.figure-caption {
+  color:rgb(12, 99, 128);
+}
 
 #Proyectos {
   background-color: rgba(223, 244, 255, 1);
