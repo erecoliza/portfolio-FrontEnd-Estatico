@@ -42,13 +42,10 @@ i.fa-brands:hover, i.fa-solid:hover  {
   height: 5vw;
 }
 
-.avatar {
-  position: absolute;
-  margin-left: 10vw;
-  margin-top: -5vw;
-  vertical-align: middle;
-  width: 8vw;
-  height: 8vw;
+.avatar {  
+  padding-top: 0.2rem;  
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
 }
 
