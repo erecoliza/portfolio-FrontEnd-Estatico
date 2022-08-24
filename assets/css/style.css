@@ -2,6 +2,7 @@ body {
   margin: 0rem;  
   padding: 0rem;
   border:0rem;
+  background-color: aliceblue;
 }
 
 .navbar.navbar-expand-lg.bg-primary {
@@ -19,8 +20,6 @@ i.fa-solid.fa-envelope, i.fa-brands.fa-whatsapp{
 i.fa-brands:hover, i.fa-solid:hover  {
   color: lightblue;
 }
-
-
 
 .list-group-item {
   --bs-list-group-bg: transparent;
@@ -56,6 +55,16 @@ i.fa-brands:hover, i.fa-solid:hover  {
   height: 5vw;
   border-radius: 50%;
 }
+
+.row {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.img-thumbnail {
+  border-color: darkgray;
+}
+
 #Header {
   background-color: rgba(223, 244, 255, 1);
   height: 4rem;
@@ -68,12 +77,10 @@ i.fa-brands:hover, i.fa-solid:hover  {
 
 #Experiencia {
   background-color: rgba(223, 244, 255, 1);
-  height: 7rem;
 }
 
 #Educacion {
-  background-color: rgba(223, 244, 255, 1);
-  height: 7rem;
+  background-color: rgba(223, 244, 255, 1);  
 }
 
 #Habilidades {
