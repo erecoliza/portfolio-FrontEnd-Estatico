@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Eduardo Alfredo Recoliza" />
     <!-- Bootstrap CSS -->
     <!-- CSS only -->
@@ -13,24 +13,106 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-
     <!-- fontawesome CSS -->
     <script
-      src="http://kit.fontawesome.com/b56caa63bd.js"
-      crossorigin="anonumous"
+      src="https://kit.fontawesome.com/b56caa63bd.js"
+      crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
-
     <title>Admin - Dashboard</title>
-
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logo.png" alt="" width="70%" />
+          </a>
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item border-0">
+              <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-brands fa-github fa-2xl"></i>
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-brands fa-facebook fa-2xl"></i>
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-brands fa-instagram fa-2xl"></i>
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-brands fa-twitter fa-2xl"></i>
+            </li>
+            <li class="list-group-item border-0">
+              <!-- Button trigger modal -->
+              <i
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                class="fa-solid fa-lock-open fa-2xl"              
+              >
+              </i>             
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="d-flex align-items-start">
+        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link" id="v-pills-AcercaDe-tab" data-bs-toggle="pill" data-bs-target="#v-pills-AcercaDe" type="button" role="tab" aria-controls="v-pills-AcercaDe" aria-selected="false">AcercaDe</button>
+          <button class="nav-link" id="v-pills-Experiencia-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Experiencia" type="button" role="tab" aria-controls="v-pills-Experiencia" aria-selected="false">Experiencia</button>
+          <button class="nav-link" id="v-pills-Educacion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Educacion" type="button" role="tab" aria-controls="v-pills-Educacion" aria-selected="false">Educacion</button>
+          <button class="nav-link" id="v-pills-Habilidades-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Habilidades" type="button" role="tab" aria-controls="v-pills-Habilidades" aria-selected="false">Habilidades</button>
+          <button class="nav-link" id="v-pills-Proyectos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Proyectos" type="button" role="tab" aria-controls="v-pills-Proyectos" aria-selected="false">Proyectos</button>
+        </div>
+        <div class="tab-content container-fluid" id="v-pills-tabContent">
+          <div class="tab-pane fade" id="v-pills-AcercaDe" role="tabpanel" aria-labelledby="v-pills-AcercaDe-tab">
+            <div class="input-group" id="Apellido y nombre">   
+              <span class="input-group-text">Apellidos:</span>           
+              <input type="text" aria-label="Apellido" class="form-control">
+              <span class="input-group-text">Nombres:</span>
+              <input type="text" aria-label="Nombre" class="form-control">
+            </div>
+            <div class="input-group" id="AcercaDe">
+              <span class="input-group-text">Acerca de: </span>
+              <textarea class="form-control" aria-label="Acerca de: "></textarea>
+            </div>
+            <button type="button" class="btn btn-secondary">Grabar</button>
+          </div>
+          <div class="tab-pane fade" id="v-pills-Experiencia" role="tabpanel" aria-labelledby="v-pills-Experiencia-tab">
+            <div class="input-group">
+              <span class="input-group-text">Logo Comercial: </span>
+              <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            </div>
+            <div class="input-group" id="Descripción">
+              <span class="input-group-text">Descripción: </span>
+              <textarea class="form-control" aria-label="Acerca de: "></textarea>
+            </div>
+            <button type="button" class="btn btn-secondary">Grabar</button>
+          </div>
+          <div class="tab-pane fade" id="v-pills-Educacion" role="tabpanel" aria-labelledby="v-pills-Educacion-tab">
+            <div class="input-group">
+              <span class="input-group-text">Logo Instituto Educativo: </span>
+              <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            </div>
+            <div class="input-group" id="Descripción">
+              <span class="input-group-text">Descripción: </span>
+              <textarea class="form-control" aria-label="Acerca de: "></textarea>
+            </div>
+            <button type="button" class="btn btn-secondary">Grabar</button>
+          </div>
     
+          <div class="tab-pane fade" id="v-pills-Habilidades" role="tabpanel" aria-labelledby="v-pills-Habilidades-tab">Habilidades</div>
+    
+          <div class="tab-pane fade" id="v-pills-Proyectos" role="tabpanel" aria-labelledby="v-pills-Proyectos-tab">Proyectos</div>
+        </div>
+      </div>
+
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
