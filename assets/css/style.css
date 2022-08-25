@@ -31,6 +31,10 @@ i.fa-brands:hover, i.fa-solid:hover  {
   border: 1px solid rgb(149, 175, 233);
 }
 
+.titulo {
+  text-align: left; 
+  padding-left: 2rem;
+}
 .responsive {
   max-width: 100%;
   height: auto;
@@ -56,9 +60,24 @@ i.fa-brands:hover, i.fa-solid:hover  {
   border-radius: 50%;
 }
 
-.row {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.row {  
+  padding:0px; 
+  margin: 0px;
+}
+
+.card {
+  padding:0px;
+  margin: 5px;
+  background-color:#B8E5FF;   
+}
+
+.row-experiencia {
+  padding:0px;
+  padding-top:10px;
+  background-color:#B8E5FF; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid rgb(149, 175, 233);  
 }
 
 .img-thumbnail {
@@ -87,7 +106,9 @@ i.fa-brands:hover, i.fa-solid:hover  {
   background-color: rgba(223, 244, 255, 1);  
 }
 .figure-caption {
-  color:#4B0150;
+  font-size: medium;
+  font-weight: 500;
+  color:#321135;
 }
 
 #Proyectos {
