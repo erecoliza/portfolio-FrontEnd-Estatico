@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<meta />
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Eduardo Alfredo Recoliza" />
+  <!-- Bootstrap CSS -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+  <!-- fontawesome CSS -->
+  <script src="http://kit.fontawesome.com/b56caa63bd.js" crossorigin="anonumous"></script>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <title>Portfolio Well Full Stack</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+  <!-- JavaScript circle bar Progress -->
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.knob.js"></script>
+  <script>
+    $(document).ready(function() {      
+      $('.dial').knob({
+        'min':0,
+        'max':100,
+        'width':100,
+        'height':100,
+        'displayInput':true,        
+        'release':function(v) {$("p").text(v);},
+        'readOnly':true
+      });
+    });
+  </script>  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/logo.png" alt="" width="70%" />
+      </a>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item border-0">
+          <i class="fa-brands fa-linkedin fa-2xl"></i>
+        </li>
+        <li class="list-group-item border-0">
+          <i class="fa-brands fa-github fa-2xl"></i>
+        </li>
+        <li class="list-group-item border-0">
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+        </li>
+        <li class="list-group-item border-0">
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+        </li>
+        <li class="list-group-item border-0">
+          <i class="fa-brands fa-twitter fa-2xl"></i>
+        </li>
+        <li class="list-group-item border-0">
+          <!-- Button trigger modal -->
+          <i type="button" data-bs-toggle="modal" data-bs-target="#loginModal" class="fa-solid fa-user-lock fa-2xl">
+          </i>
+        </li>
+      </ul>
+      <!-- Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <img src="./assets/img_avatar.jpg" alt="Avatar" class="avatarito" />
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="name@example.com" />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">
+                Iniciar Sesión
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container-fluid" id="Banner">
+    <img src="./assets/banner/Banner.png" class="d-block w-100 responsive rounded" alt="...">
+  </div>
+
+  <!-- ACERCA DE -->  
+  <div class="container-fluid text-center" id="AcercaDe">    
+      <div class="row">
+        <div class="col-lg-2 align-self-center align-items-center">
+          <img src="./assets/img_avatar.jpg" alt="Avatar" class="avatar" />
+          <h4>Eduardo Recoliza</h4>
+          <ul class="list-group list-group-horizontal justify-content-center">
+            <li class="list-group-item border-0">
+              <i class="fa-brands fa-whatsapp fa-2xl"></i>
+            </li>
+            <li class="list-group-item border-0">
+              <i class="fa-solid fa-envelope fa-2xl"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-10 align-self-center align-items-center">
+          <div class="row">
+            <div class="col-lg-12 align-self-center align-items-center">
+              <h3>Acerca de</h3>
+            </div>
+          </div>
+          <div class="container-fluid" id="Acercade-Descripción" style="background-color:#B8E5FF;  ">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquam nam eum, minima natus est enim
+              veniam quidem consectetur tenetur numquam ut rem beatae velit voluptatem consequuntur, earum animi
+              facilis. Aliquid totam est provident tempora dignissimos odio labore molestiae omnis in quidem obcaecati
+              expedita sapiente ipsa rem quas sint, ut maiores. Omnis nisi, dolore, quae, rerum magni error est
+              similique tempora pariatur optio ut mollitia labore! Quo, blanditiis. Quibusdam alias veniam consectetur
+              cumque laborum quod cupiditate porro atque doloremque dolore labore natus nemo soluta velit minus, ratione
+              nihil rerum suscipit,
+            </p>
+          </div>
+        </div>
+      </div>     
+  </div>
+  <div class="container-fluid">    
+    <ul class="nav nav-pills">    
+      <li><a data-toggle="tab" href="#Experiencia">Experiencia</a></li>
+      <li><a data-toggle="tab" href="#Educacion">Educación</a></li>
+      <li class="active"><a data-toggle="tab" href="#Habilidades">Habilidades</a></li>
+      <li><a data-toggle="tab" href="#Proyectos">Proyectos</a></li>
+    </ul>
+    <div class="tab-content">
+      <!-- EXPERIENCIA -->  
+      <div class="container-fluid text-center tab-pane fade" id="Experiencia">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="titulo">Experiencia Laboral</h3>
+            </div>
+          </div>
+          <div class="row row-experiencia">
+            <div class="col-lg-2 align-self-center align-items-center" style="padding:1px; ">
+              <img src="./assets/experiencia/logo-lacosta.svg" alt="Avatar" class="img-fluid img-thumbnail" />         
+            </div>
+            <div class="col-lg-10">
+              <div class="card" style="background-color:#B8E5FF; padding:1px; ">
+                <div class="card-header">
+                  <h4>Municipalidad de la Costa</h4>
+                </div>
+                <div class="card-body" style="text-align: justify; " >                
+                    <p>                
+                      Puesto Laboral: 
+                      <strong> Puesto Laboral </strong>
+                    </p>                
+                    <p>                
+                      Período desde: 
+                      <strong> 99/9999 </strong>
+                      hasta:
+                      <strong> 99/9999 </strong>
+                    </p>                
+                    <p>                
+                      Descripción: 
+                      <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde minima velit non culpa voluptatum veniam natus magnam animi autem cumque facere impedit suscipit, ducimus eaque dolor ullam assumenda, id, ipsum odit provident. Iste fugiat delectus eveniet quam et voluptate ut atque incidunt harum similique reprehenderit fugit repellendus, dolores suscipit. </strong>
+                    </p>                
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="card-link">www.lacosta.gob.ar</a>
+                </div>
+              </div>          
+            </div>
+          </div>
+          <div class="row row-experiencia">
+            <div class="col-lg-2 align-self-center align-items-center">
+              <img src="./assets/experiencia/logo-uaa.svg" alt="Avatar" class="img-fluid img-thumbnail" />
+            </div>
+            <div class="col-lg-10 align-self-center align-items-center">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Universidad Atlantida Argentina</h4>
+                </div>
+                <div class="card-body" style="text-align: justify; " >                
+                  <p>                
+                    Puesto Laboral: 
+                    <strong> Puesto Laboral </strong>
+                  </p>                
+                  <p>                
+                    Período desde: 
+                    <strong> 99/9999 </strong>
+                    hasta:
+                    <strong> 99/9999 </strong>
+                  </p>                
+                  <p>                
+                    Descripción: 
+                    <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde minima velit non culpa voluptatum veniam natus magnam animi autem cumque facere impedit suscipit, ducimus eaque dolor ullam assumenda, id, ipsum odit provident. Iste fugiat delectus eveniet quam et voluptate ut atque incidunt harum similique reprehenderit fugit repellendus, dolores suscipit. </strong>
+                  </p>                
+              </div>
+                <div class="card-footer">
+                  <a href="#" class="card-link">www.atlantidad.edu.ar</a>
+                </div>
+              </div>          
+            </div>
+          </div>
+          <div class="row row-experiencia">
+            <div class="col-lg-2 align-self-center align-items-center">
+              <img src="./assets/experiencia/logo-flacso.svg" alt="Avatar" class="img-fluid img-thumbnail" />          
+            </div>
+            <div class="col-lg-10 align-self-center align-items-center">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Facultad Latinoamericana de Ciencias Sociales</h4>
+                </div>
+                <div class="card-body" style="text-align: justify; " >                
+                  <p>                
+                    Puesto Laboral: 
+                    <strong> Puesto Laboral </strong>
+                  </p>                
+                  <p>                
+                    Período desde: 
+                    <strong> 99/9999 </strong>
+                    hasta:
+                    <strong> 99/9999 </strong>
+                  </p>                
+                  <p>                
+                    Descripción: 
+                    <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde minima velit non culpa voluptatum veniam natus magnam animi autem cumque facere impedit suscipit, ducimus eaque dolor ullam assumenda, id, ipsum odit provident. Iste fugiat delectus eveniet quam et voluptate ut atque incidunt harum similique reprehenderit fugit repellendus, dolores suscipit. </strong>
+                  </p>                
+              </div>
+                <div class="card-footer">
+                  <a href="#" class="card-link">www.flacso.org.ar</a>
+                </div>
+              </div>          
+            </div> 
+          </div>
+          <div class="row row-experiencia">
+            <div class="col-lg-2 align-self-center align-items-center">
+              <img src="./assets/experiencia/logo-kydat.svg" alt="Avatar" class="img-fluid img-thumbnail" style="background-color:blue;"
+              />          
+            </div>
+            <div class="col-lg-10 align-self-center align-items-center">
+              <div class="card">
+                <div class="card-header">
+                  <h4>K&Dat Sistemas</h4>
+                </div>
+                <div class="card-body" style="text-align: justify; " >                
+                  <p>                
+                    Puesto Laboral: 
+                    <strong> Puesto Laboral </strong>
+                  </p>                
+                  <p>                
+                    Período desde: 
+                    <strong> 99/9999 </strong>
+                    hasta:
+                    <strong> 99/9999 </strong>
+                  </p>                
+                  <p>                
+                    Descripción: 
+                    <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde minima velit non culpa voluptatum veniam natus magnam animi autem cumque facere impedit suscipit, ducimus eaque dolor ullam assumenda, id, ipsum odit provident. Iste fugiat delectus eveniet quam et voluptate ut atque incidunt harum similique reprehenderit fugit repellendus, dolores suscipit. </strong>
+                  </p>                
+              </div>
+                <div class="card-footer">
+                  <a href="#" class="card-link">www.kydat.com.ar</a>
+                </div>
+              </div>          
+            </div>         
+          </div>
+          <div class="row row-experiencia">
+            <div class="col-lg-2 align-self-center align-items-center">
+              <img src="./assets/experiencia/logo-columbia.svg" alt="Avatar" class="img-fluid img-thumbnail" />          
+            </div>
+            <div class="col-lg-10 align-self-center align-items-center">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Columbia S.A. de Seguros</h4>
+                </div>
+                <div class="card-body" style="text-align: justify; " >                
+                  <p>                
+                    Puesto Laboral: 
+                    <strong> Puesto Laboral </strong>
+                  </p>                
+                  <p>                
+                    Período desde: 
+                    <strong> 99/9999 </strong>
+                    hasta:
+                    <strong> 99/9999 </strong>
+                  </p>                
+                  <p>                
+                    Descripción: 
+                    <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde minima velit non culpa voluptatum veniam natus magnam animi autem cumque facere impedit suscipit, ducimus eaque dolor ullam assumenda, id, ipsum odit provident. Iste fugiat delectus eveniet quam et voluptate ut atque incidunt harum similique reprehenderit fugit repellendus, dolores suscipit. </strong>
+                  </p>                
+              </div>
+                <div class="card-footer">
+                  <a href="#" class="card-link">www.columbiaseguros.com.ar</a>
+                </div>
+              </div>          
+            </div>         
+          </div>
+      </div>
+      <!-- EDUCACIÓN -->  
+      <div class="container-fluid text-center tab-pane fade" id="Educacion">    
+          <div class="row">
+            <div class="col-lg-12 align-self-center align-items-center">
+              <h3 class="titulo">Educación</h3>
+            </div>
+          </div>
+          <div class="row row-experiencia">
+            <div class="col-lg-2 align-self-center align-items-center">
+              <img src="./assets/estudio/logo-argentinaprograma.svg" alt="Avatar" class="img-fluid img-thumbnail" />
+            </div>
+            <div class="col-lg-10 align-self-center align-items-center">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Argentina Programa</h4>
+                </div>
+                <div class="card-body" style="text-align: justify; " >                
+                  <p>                
+                    Carrera/Título: 
+                    <strong> Curso realizado </strong>
+                  </p>                
+                  <p>                
+                    Período desde: 
+                    <strong> 99/9999 </strong>
+                    hasta:
+                    <strong> 99/9999 </strong>
+                  </p>                
+                  <p>                
+                    Descripción: 
+                    <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde minima velit non culpa voluptatum veniam natus magnam animi autem cumque facere impedit suscipit, ducimus eaque dolor ullam assumenda, id, ipsum odit provident. Iste fugiat delectus eveniet quam et voluptate ut atque incidunt harum similique reprehenderit fugit repellendus, dolores suscipit. </strong>
+                  </p>                
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="card-link">www.argentinaprograma.inti.gob.ar</a>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <div class="row row-experiencia">
+            <div class="col-lg-2 align-self-center align-items-center">
+              <img src="./assets/estudio/logo-imt.svg" alt="Avatar" class="img-fluid img-thumbnail" />
+            </div>
+            <div class="col-lg-10 align-self-center align-items-center">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Instituto Municipal de Tecnología</h4>
+                </div>
+                <div class="card-body" style="text-align: justify; " >                
+                  <p>                
+                    Carrera/Título: 
+                    <strong> Curso realizado </strong>
+                  </p>                
+                  <p>                
+                    Período desde: 
+                    <strong> 99/9999 </strong>
+                    hasta:
+                    <strong> 99/9999 </strong>
+                  </p>                
+                  <p>                
+                    Descripción: 
+                    <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde minima velit non culpa voluptatum veniam natus magnam animi autem cumque facere impedit suscipit, ducimus eaque dolor ullam assumenda, id, ipsum odit provident. Iste fugiat delectus eveniet quam et voluptate ut atque incidunt harum similique reprehenderit fugit repellendus, dolores suscipit. </strong>
+                  </p>                
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="card-link">www.imt.lacosta.gob.ar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-experiencia">
+            <div class="col-lg-2 align-self-center align-items-center">
+              <img src="./assets/estudio/logo-oracle.svg" alt="Avatar" class="img-fluid img-thumbnail" />
+            </div>
+            <div class="col-lg-10 align-self-center align-items-center">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Oracle Alura</h4>
+                </div>
+                <div class="card-body" style="text-align: justify; " >                
+                  <p>                
+                    Carrera/Título: 
+                    <strong> Curso realizado </strong>
+                  </p>                
+                  <p>                
+                    Período desde: 
+                    <strong> 99/9999 </strong>
+                    hasta:
+                    <strong> 99/9999 </strong>
+                  </p>                
+                  <p>                
+                    Descripción: 
+                    <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde minima velit non culpa voluptatum veniam natus magnam animi autem cumque facere impedit suscipit, ducimus eaque dolor ullam assumenda, id, ipsum odit provident. Iste fugiat delectus eveniet quam et voluptate ut atque incidunt harum similique reprehenderit fugit repellendus, dolores suscipit. </strong>
+                  </p>                
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="card-link">www.aluracursos.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-experiencia">
+            <div class="col-lg-2 align-self-center align-items-center">
+              <img src="./assets/estudio/logo-uaa.svg" alt="Avatar" class="img-fluid img-thumbnail" />
+            </div>
+            <div class="col-lg-10 align-self-center align-items-center">
+            
+              <div class="card">
+                <div class="card-header">
+                  <h4>Universidad Atlantida Argentina</h4>
+                </div>
+                <div class="card-body" style="text-align: justify; " >                
+                  <p>                
+                    Carrera/Título: 
+                    <strong> Curso realizado </strong>
+                  </p>                
+                  <p>                
+                    Período desde: 
+                    <strong> 99/9999 </strong>
+                    hasta:
+                    <strong> 99/9999 </strong>
+                  </p>                
+                  <p>                
+                    Descripción: 
+                    <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde minima velit non culpa voluptatum veniam natus magnam animi autem cumque facere impedit suscipit, ducimus eaque dolor ullam assumenda, id, ipsum odit provident. Iste fugiat delectus eveniet quam et voluptate ut atque incidunt harum similique reprehenderit fugit repellendus, dolores suscipit. </strong>
+                  </p>                
+              </div>
+                <div class="card-footer">
+                  <a href="#" class="card-link">www.atlantida.edu.ar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-experiencia">
+            <div class="col-lg-2 align-self-center align-items-center">
+              <img src="./assets/estudio/logo-ira.svg" alt="Avatar" class="img-fluid img-thumbnail" />
+            </div>
+            <div class="col-lg-10 align-self-center align-items-center">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Instituto Republica Argentina</h4>
+                </div>
+                <div class="card-body" style="text-align: justify; " >                
+                  <p>                
+                    Carrera/Título: 
+                    <strong> Curso realizado </strong>
+                  </p>                
+                  <p>                
+                    Período desde: 
+                    <strong> 99/9999 </strong>
+                    hasta:
+                    <strong> 99/9999 </strong>
+                  </p>                
+                  <p>                
+                    Descripción: 
+                    <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde minima velit non culpa voluptatum veniam natus magnam animi autem cumque facere impedit suscipit, ducimus eaque dolor ullam assumenda, id, ipsum odit provident. Iste fugiat delectus eveniet quam et voluptate ut atque incidunt harum similique reprehenderit fugit repellendus, dolores suscipit. </strong>
+                  </p>                
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="card-link">www.irabernal.edu.ar</a>
+                </div>
+              </div>
+            </div>
+          </div>    
+      </div>
+      <!-- HABILIDADES -->  
+      <div class="container-fluid text-center tab-pane fade in active" id="Habilidades">   
+        <div class="row">
+          <div class="col-lg-12 align-self-center align-items-center">
+            <h3 class="titulo">Habilidades</h3>
+          </div>
+        </div>
+        <div class="row align-self-center align-items-center row-experiencia">
+          <div class="col">
+            <figure class="figure">
+              <input type="text" value="90" class="dial" data-width="25" data-thickness=".32" data-fgColor="#483C32" data-bgColor="#EEEEEE" data-cursor=false data-displayInput="true" data-readOnly=true width:"50" height:"50">
+              <figcaption class="figure-caption">HTML</figcaption>
+            </figure>
+          </div>      
+          <div class="col">
+            <figure class="figure">
+              <input type="text" value="70" class="dial" data-width="25" data-thickness=".32" data-fgColor="#008000" data-bgColor="#EEEEEE" data-cursor=false data-displayInput="true" data-readOnly=true width:"50" height:"50">
+              <figcaption class="figure-caption">CSS</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <input type="text" value="55" class="dial" data-width="25" data-thickness=".32" data-fgColor="#ff00ff" data-bgColor="#EEEEEE" data-cursor=false data-displayInput="true" data-readOnly=true>
+              <figcaption class="figure-caption">JS</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <input type="text" value="85" class="dial" data-width="25" data-thickness=".32" data-fgColor="#008BE8" data-bgColor="#EEEEEE" data-cursor=false data-displayInput="true" data-readOnly=true>
+              <figcaption class="figure-caption">ANGULAR</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <input type="text" value="55" class="dial" data-width="25" data-thickness=".32" data-fgColor="#800000" data-bgColor="#EEEEEE" data-cursor=false data-displayInput="true" data-readOnly=true width:"50" height:"50">
+              <figcaption class="figure-caption">REACT</figcaption>
+            </figure>
+          </div>      
+          <div class="col">
+            <figure class="figure">
+              <input type="text" value="35" class="dial" data-width="25" data-thickness=".32" data-fgColor="#ff0000" data-bgColor="#EEEEEE" data-cursor=false data-displayInput="true" data-readOnly=true width:"50" height:"50">
+              <figcaption class="figure-caption">PYTHON</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <input type="text" value="45" class="dial" data-width="25" data-thickness=".32" data-fgColor="#000000" data-bgColor="#EEEEEE" data-cursor=false data-displayInput="true" data-readOnly=true>
+              <figcaption class="figure-caption">PHP</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <input type="text" value="80" class="dial" data-width="25" data-thickness=".32" data-fgColor="#2B547E" data-bgColor="#EEEEEE" data-cursor=false data-displayInput="true" data-readOnly=true>
+              <figcaption class="figure-caption">MYSQL</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <input type="text" value="45" class="dial" data-width="25" data-thickness=".32" data-fgColor="#045F5F" data-bgColor="#EEEEEE" data-cursor=false data-displayInput="true" data-readOnly=true width:"50" height:"50">
+              <figcaption class="figure-caption">API-REST</figcaption>
+            </figure>
+          </div>          
+        </div>
+      </div>
+      <!-- PROYECTOS -->  
+      <div class="container-fluid text-center tab-pane fade" id="Proyectos">    
+        <div class="row"> 
+          <h3 class="titulo">Proyectos</h3>
+        </div>     
+        <div class="row row-experiencia">      
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-header">
+                <h4>Proyecto App. (1)</h4>
+              </div>
+              <div class="card-body" style="text-align: justify; " >                
+                <p>                
+                  Fecha: 
+                  <strong> 99/9999 </strong>
+                </p>                
+                <p>                
+                  Descripción: 
+                  <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde minima velit non culpa voluptatum veniam natus magnam animi autem cumque facere impedit suscipit, ducimus eaque dolor ullam assumenda, id, ipsum odit provident. Iste fugiat delectus eveniet quam et voluptate ut atque incidunt harum similique reprehenderit fugit repellendus, dolores suscipit. </strong>
+                </p>                
+              </div>
+              <div class="card-footer">
+                <a href="#" class="card-link">www.proyecto.app</a>
+              </div>
+            </div>                                 
+          </div>
+        </div>    
+        <div class="row row-experiencia">      
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-header">
+                <h4>Proyecto App. (2)</h4>
+              </div>
+              <div class="card-body" style="text-align: justify; " >                
+                <p>                
+                  Fecha: 
+                  <strong> 99/9999 </strong>
+                </p>                
+                <p>                
+                  Descripción: 
+                  <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde minima velit non culpa voluptatum veniam natus magnam animi autem cumque facere impedit suscipit, ducimus eaque dolor ullam assumenda, id, ipsum odit provident. Iste fugiat delectus eveniet quam et voluptate ut atque incidunt harum similique reprehenderit fugit repellendus, dolores suscipit. </strong>
+                </p>                            
+              </div>
+              <div class="card-footer">
+                <a href="#" class="card-link">www.proyecto.app</a>
+              </div>
+            </div>                                 
+          </div>
+        </div>   
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous">  
+  </script>  
+</body>
+<footer>
+  <h5> Desarrollado por ( <i class="fa-solid fa-user"></i> Eduardo Recoliza ) -  <i class="fa-solid fa-earth-americas"></i> Argentina (2022)</h5>      
+</footer>
+</html>
