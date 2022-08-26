@@ -136,7 +136,10 @@ footer {
 }
 
 /* From uiverse.io by @alexroumi */
-.button-accordion {
+#pills-experiencia-tab,
+#pills-educacion-tab,
+#pills-habilidades-tab,
+#pills-proyectos-tab {
   padding: 15px 25px;
   border: unset;
   border-radius: 15px;
@@ -152,7 +155,10 @@ footer {
   overflow: hidden;
  }
  
- .button-accordion::before {
+ #pills-experiencia-tab::before,
+ #pills-educacion-tab::before,
+ #pills-habilidades-tab::before,
+ #pills-proyectos-tab::before  {
   content: "";
   position: absolute;
   top: 0;
@@ -167,10 +173,16 @@ footer {
   transition: all 250ms
  }
  
- .button-accordion:hover {
+ #pills-experiencia-tab:hover,
+ #pills-educacion-tab:hover,
+ #pills-habilidades-tab:hover,
+ #pills-proyectos-tab:hover {
   color: #e8e8e8;
  }
  
- .button-accordion:hover::before {
+ #pills-experiencia-tab:hover::before,
+ #pills-educacion-tab:hover::before,
+ #pills-habilidades-tab:hover::before,
+ #pills-proyectos-tab:hover::before {
   width: 100%;
  }
